@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "pico-nrf24/lib/nrf24l01/spi_manager",
+		"source" : "pico-nrf24/lib/nrf24l01/spi_manager"
+	}
+}
