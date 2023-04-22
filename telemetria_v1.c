@@ -88,8 +88,9 @@ int main(void)
     uint16_t vang_phi;
     uint16_t vang_w;
     uint16_t magnetometro;  
-  };
-  
+  } payload;
+
+  payload datos = { .accel_x = 0 } ;
   // payload sent to receiver data pipe 2
   payload_two_t payload_two = { .one = 123, .two = 213 };
 
