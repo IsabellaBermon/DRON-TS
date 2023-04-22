@@ -1414,9 +1414,9 @@ Discarded input sections
                 0x00000000       0x3c CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_read16_blocking
                 0x00000000       0x3e CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .text          0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
- .data          0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
- .bss           0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
+ .text          0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccOFD5MH.o
+ .data          0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccOFD5MH.o
+ .bss           0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccOFD5MH.o
  .data          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1632,7 +1632,7 @@ LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
+ .boot2         0x10000000      0x100 C:\Users\Grupo\AppData\Local\Temp\ccOFD5MH.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3227,7 +3227,7 @@ LOAD CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/nrf24_driver.c.obj
 LOAD CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/spi_manager/spi_manager.c.obj
 LOAD CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/pin_manager/pin_manager.c.obj
 LOAD CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-LOAD C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
+LOAD C:\Users\Grupo\AppData\Local\Temp\ccOFD5MH.o
 LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3350,7 +3350,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000826       0x2c CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .ARM.attributes
-                0x00000852       0x22 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
+                0x00000852       0x22 C:\Users\Grupo\AppData\Local\Temp\ccOFD5MH.o
  .ARM.attributes
                 0x00000874       0x1e c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
