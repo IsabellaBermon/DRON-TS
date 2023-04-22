@@ -4,7 +4,7 @@
 7985	8674	7038231654741323	pico-nrf24/examples/primary_receiver/CMakeFiles/primary_receiver.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj	ce4ddd075401dda9
 2726	3330	7038231600764714	CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj	45cf12d10532895d
 2170	3317	7038231600774722	CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_math.c.obj	acd469ea1a094927
-42	283	7038258256910688	CMakeFiles/telemetria_v1.dir/telemetria_v1.c.obj	c9784832a6f721d6
+51	304	7038262111597200	CMakeFiles/telemetria_v1.dir/telemetria_v1.c.obj	c9784832a6f721d6
 129	259	7038231571006082	pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf	39962846d219321f
 286	360	7038231572642659	C:/Users/Grupo/OneDrive/Documents/Pico-v1.5.0/pico-projects/DRON-TS/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S	678daf25ea5d85bb
 286	360	7038231572642659	pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S	678daf25ea5d85bb
@@ -94,7 +94,7 @@
 4995	5533	7038231623445194	pico-nrf24/examples/primary_receiver/CMakeFiles/primary_receiver.dir/__/__/lib/nrf24l01/spi_manager/spi_manager.c.obj	19636bd5721c6e0
 4887	5542	7038231623825843	CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj	d176e97742583209
 4764	5606	7038231623825843	CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/nrf24_driver.c.obj	27196f3473f7fb4a
-284	603	7038258258740366	telemetria_v1.elf	ad0e5bbde8ba9a3d
+305	646	7038262113662822	telemetria_v1.elf	ad0e5bbde8ba9a3d
 10771	11410	7038231682429285	pico-nrf24/examples/primary_transmitter/CMakeFiles/primary_transmitter.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj	ae60d0e3dc181ad9
 4928	5714	7038231624216004	pico-nrf24/examples/primary_receiver/CMakeFiles/primary_receiver.dir/primary_receiver.c.obj	1f9465390a5b0455
 5357	6007	7038231628654207	pico-nrf24/examples/primary_receiver/CMakeFiles/primary_receiver.dir/__/__/lib/nrf24l01/pin_manager/pin_manager.c.obj	cfc8f89d4fef204e
@@ -230,5 +230,5 @@
 15085	15399	7038231723027886	pico-nrf24/examples/primary_transmitter/CMakeFiles/primary_transmitter.dir/a337a4a1fef69ff3270e1ba3ee3559b3/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj	205cae27c91ee556
 15135	15429	7038231723357667	pico-nrf24/examples/primary_transmitter/CMakeFiles/primary_transmitter.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj	bd75a7b3cf87fa05
 15071	15500	7038231724068153	pico-nrf24/examples/primary_transmitter/CMakeFiles/primary_transmitter.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj	ecdf7136b9b0a596
-51	304	7038262111597200	CMakeFiles/telemetria_v1.dir/telemetria_v1.c.obj	c9784832a6f721d6
-305	646	7038262113662822	telemetria_v1.elf	ad0e5bbde8ba9a3d
+42	254	7038263963543296	CMakeFiles/telemetria_v1.dir/telemetria_v1.c.obj	c9784832a6f721d6
+255	592	7038263965597621	telemetria_v1.elf	ad0e5bbde8ba9a3d
