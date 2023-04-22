@@ -15,7 +15,7 @@ int main(void)
     sleep_ms(10);
   }
 
-
+  //prueba de usuaro git
   // GPIO pin numbers
   pin_manager_t my_pins = { 
     .sck = 6,
