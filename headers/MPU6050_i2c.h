@@ -3,7 +3,6 @@
 #include "hardware/gpio.h"
 #include "hardware/i2c.h"
 
-#define i2c_default i2c1
 #define MPU6050_i2c i2c1
 #define MPU6050_addr 0x68
 

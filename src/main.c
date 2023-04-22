@@ -4,8 +4,9 @@
 #include "hardware/i2c.h"
 #include "MPU6050_i2c.h"
 
-#define SCL 7
-#define SDA 6
+#define SDA 18
+#define SCL 19
+
 
 int main()
 {
