@@ -1414,9 +1414,9 @@ Discarded input sections
                 0x00000000       0x3c CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_read16_blocking
                 0x00000000       0x3e CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .text          0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccHKVdDn.o
- .data          0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccHKVdDn.o
- .bss           0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccHKVdDn.o
+ .text          0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
+ .data          0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
+ .bss           0x00000000        0x0 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
  .data          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1632,7 +1632,7 @@ LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\Grupo\AppData\Local\Temp\ccHKVdDn.o
+ .boot2         0x10000000      0x100 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3227,7 +3227,7 @@ LOAD CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/nrf24_driver.c.obj
 LOAD CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/spi_manager/spi_manager.c.obj
 LOAD CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/pin_manager/pin_manager.c.obj
 LOAD CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-LOAD C:\Users\Grupo\AppData\Local\Temp\ccHKVdDn.o
+LOAD C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
 LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3350,7 +3350,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000826       0x2c CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .ARM.attributes
-                0x00000852       0x22 C:\Users\Grupo\AppData\Local\Temp\ccHKVdDn.o
+                0x00000852       0x22 C:\Users\Grupo\AppData\Local\Temp\ccMeZkcR.o
  .ARM.attributes
                 0x00000874       0x1e c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -3684,55 +3684,55 @@ LOAD linker stubs
  .debug_ranges  0x00004c18       0x68 CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/pin_manager/pin_manager.c.obj
  .debug_ranges  0x00004c80      0x270 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
-.debug_line     0x00000000    0x1a558
- .debug_line    0x00000000      0x718 CMakeFiles/telemetria_v1.dir/telemetria_v1.c.obj
- .debug_line    0x00000718      0xd5a CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00001472      0x2d6 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x00001748      0x4e3 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x00001c2b      0x4df CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x0000210a     0x112c CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00003236      0x28e CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x000034c4     0x1173 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x00004637      0x319 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x00004950     0x1cb8 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x00006608      0xd07 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x0000730f      0x8e8 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x00007bf7      0xadc CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x000086d3      0x60f CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00008ce2      0x45b CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x0000913d      0x2ff CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x0000943c      0xbfe CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x0000a03a     0x1254 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000b28e      0x163 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000b3f1      0x26b CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000b65c      0x2ec CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000b948      0x441 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000bd89      0x3bc CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000c145      0x6b9 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000c7fe       0xb3 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000c8b1      0x3f7 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000cca8      0x3ae CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000d056      0x1e3 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000d239       0xdd CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000d316       0xeb CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000d401      0x211 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000d612      0xfc1 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x0000e5d3      0x4f1 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_line    0x0000eac4      0xf21 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_line    0x0000f9e5      0x34b CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_line    0x0000fd30      0x410 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x00010140      0x863 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x000109a3      0xf71 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x00011914      0xadf CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x000123f3     0x2090 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x00014483      0x4bf CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x00014942      0xea6 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_line    0x000157e8      0xc5b CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x00016443     0x15a1 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_line    0x000179e4     0x1260 CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/nrf24_driver.c.obj
- .debug_line    0x00018c44      0x496 CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/spi_manager/spi_manager.c.obj
- .debug_line    0x000190da      0x65f CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/pin_manager/pin_manager.c.obj
- .debug_line    0x00019739      0xe1f CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.debug_line     0x00000000    0x1a55d
+ .debug_line    0x00000000      0x71d CMakeFiles/telemetria_v1.dir/telemetria_v1.c.obj
+ .debug_line    0x0000071d      0xd5a CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00001477      0x2d6 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x0000174d      0x4e3 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x00001c30      0x4df CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x0000210f     0x112c CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x0000323b      0x28e CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x000034c9     0x1173 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x0000463c      0x319 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x00004955     0x1cb8 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x0000660d      0xd07 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x00007314      0x8e8 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00007bfc      0xadc CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x000086d8      0x60f CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x00008ce7      0x45b CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00009142      0x2ff CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x00009441      0xbfe CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x0000a03f     0x1254 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000b293      0x163 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000b3f6      0x26b CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000b661      0x2ec CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000b94d      0x441 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000bd8e      0x3bc CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000c14a      0x6b9 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000c803       0xb3 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000c8b6      0x3f7 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000ccad      0x3ae CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000d05b      0x1e3 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000d23e       0xdd CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000d31b       0xeb CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000d406      0x211 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000d617      0xfc1 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0000e5d8      0x4f1 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_line    0x0000eac9      0xf21 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_line    0x0000f9ea      0x34b CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_line    0x0000fd35      0x410 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x00010145      0x863 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x000109a8      0xf71 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x00011919      0xadf CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x000123f8     0x2090 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x00014488      0x4bf CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x00014947      0xea6 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_line    0x000157ed      0xc5b CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00016448     0x15a1 CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_line    0x000179e9     0x1260 CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/nrf24_driver.c.obj
+ .debug_line    0x00018c49      0x496 CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/spi_manager/spi_manager.c.obj
+ .debug_line    0x000190df      0x65f CMakeFiles/telemetria_v1.dir/pico-nrf24/lib/nrf24l01/pin_manager/pin_manager.c.obj
+ .debug_line    0x0001973e      0xe1f CMakeFiles/telemetria_v1.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
 .debug_str      0x00000000     0x83e8
  .debug_str     0x00000000      0x644 CMakeFiles/telemetria_v1.dir/telemetria_v1.c.obj

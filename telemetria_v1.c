@@ -79,6 +79,17 @@ int main(void)
 
   typedef struct payload_two_s { uint8_t one; uint8_t two; } payload_two_t;
 
+  typedef struct payload 
+  {
+    uint16_t accel_x;
+    uint16_t accel_y;
+    uint16_t accel_z;
+    uint16_t vang_theta;
+    uint16_t vang_phi;
+    uint16_t vang_w;
+    uint16_t magnetometro;  
+  };
+  
   // payload sent to receiver data pipe 2
   payload_two_t payload_two = { .one = 123, .two = 213 };
 

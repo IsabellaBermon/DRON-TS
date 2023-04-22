@@ -230,3 +230,5 @@
 15135	15429	7038231723357667	pico-nrf24/examples/primary_transmitter/CMakeFiles/primary_transmitter.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj	bd75a7b3cf87fa05
 15071	15500	7038231724068153	pico-nrf24/examples/primary_transmitter/CMakeFiles/primary_transmitter.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj	ecdf7136b9b0a596
 15500	15827	7038231725993925	pico-nrf24/examples/primary_transmitter/primary_transmitter.elf	46036c7e98f17e4f
+42	283	7038258256910688	CMakeFiles/telemetria_v1.dir/telemetria_v1.c.obj	c9784832a6f721d6
+284	603	7038258258740366	telemetria_v1.elf	ad0e5bbde8ba9a3d
