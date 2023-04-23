@@ -32,7 +32,7 @@ pico_set_program_version(Transmisor "0.1")
 pico_enable_stdio_uart(Transmisor 0)
 pico_enable_stdio_usb(Transmisor 1)
 
-target_include_directories(Transmisor PUBLIC headers/)
+target_include_directories(Transmisor PUBLIC inc/)
 
 # Add the standard library to the build
 target_link_libraries(Transmisor pico_stdlib 
