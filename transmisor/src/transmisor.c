@@ -73,22 +73,32 @@ int main(void)
   my_nrf.standby_mode();
 
 
-  // DATA STRUCTURE TO SEND
+  // DATA STRUCTURE TO SEND ---------------
 
   // payload sent to receiver data pipe 0
   uint8_t payload_zero = 123;
-
   // payload sent to receiver data pipe 1
   uint8_t payload_one[5] = "Hello";
-
-  typedef struct payload_two_s { uint8_t one; uint8_t two; } payload_two_t;
-
   // payload sent to receiver data pipe 2
-  payload_two_t payload_two = { .one = 123, .two = 213 };
+  typedef struct payload_two_s { uint8_t one; uint8_t two; } payload_two_t;
+  typedef struct payload 
+  {
+    uint16_t accel_x;
+    uint16_t accel_y;
+    uint16_t accel_z;
+    uint16_t vang_theta;
+    uint16_t vang_phi;
+    uint16_t vang_w;
+    uint16_t magnetometro;  
+  } payload;
+  
+  // INIT DATA -----------------------------
+  // payload sent to receiver data pipe 2
+  payload_two_t payload_two = { .one = 123, .two = 213 }; 
+  payload datos = { .accel_x = 0, .accel_y = 0, .accel_z = 0};
 
   // result of packet transmission
   fn_status_t success = 0;
-
   uint64_t time_sent = 0; // time packet was sent
   uint64_t time_reply = 0; // response time after packet sent
 
@@ -147,14 +157,14 @@ int main(void)
     time_sent = to_us_since_boot(get_absolute_time()); // time sent
 
     // send packet to receiver's DATA_PIPE_2 address
-    success = my_nrf.send_packet(&payload_two, sizeof(payload_two));
+    success = my_nrf.send_packet(&datos, sizeof(datos));
     
     // time auto-acknowledge was received
     time_reply = to_us_since_boot(get_absolute_time()); // response time
 
     if (success)
     {
-      printf("\nPacket sent:- Response: %lluμS | Payload: %d & %d\n",time_reply - time_sent, payload_two.one, payload_two.two);
+      printf("\nPacket sent:- Response: %lluμS | Payload: %d & %d\n",time_reply - time_sent, datos.accel_x, datos.accel_y, datos.accel_z);
 
     } else {
 
