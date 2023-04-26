@@ -1,10 +1,7 @@
 #include <stdio.h>
-
 #include "nrf24_driver.h"
 #include "pico/stdlib.h"
-
 #include <tusb.h> // TinyUSB tud_cdc_connected()
-
 #include "MPU6050_i2c.h"
 #include "cy273.h"
 
@@ -18,14 +15,12 @@ int main(void)
   {
     sleep_ms(10);
   }
-
-
+  
+  // initialize sensors
   mpu6050_init();
   cy273_init();
-
   mpu6050_reset();
   cy273_reset();
-
   int16_t acceleration[3], gyro[3], temp, magneto[3];
 
   // GPIO pin numbers
@@ -83,30 +78,23 @@ int main(void)
   // set to Standby-I Mode
   my_nrf.standby_mode();
 
-
   // DATA STRUCTURE TO SEND ---------------
-
   // payload sent to receiver data pipe 0
-  uint8_t payload_zero = 123;
-  // payload sent to receiver data pipe 1
-  uint8_t payload_one[5] = "Hello";
-  // payload sent to receiver data pipe 2
-  typedef struct payload_two_s { uint8_t one; uint8_t two; } payload_two_t;
-  typedef struct payload_s 
+  typedef struct payload_accel_s 
   {
-    uint16_t accel_x;
-    uint16_t accel_y;
-    uint16_t accel_z;
-    uint16_t vang_theta;
-    uint16_t vang_phi;
-    uint16_t vang_w;
-    uint16_t magnetometro;  
-  } payload_t;
-
-  // INIT DATA -----------------------------
+    uint16_t accel_x = 0;
+    uint16_t accel_y = 0;
+    uint16_t accel_z = 0;
+  } payload_accel_t;
+  // payload sent to receiver data pipe 1
+  typedef struct payload_mag_s 
+  {
+    uint16_t vang_theta = 0;
+    uint16_t vang_phi = 0;
+    uint16_t vang_w = 0; 
+  } payload_mag_t;
   // payload sent to receiver data pipe 2
-  payload_two_t payload_two = { .one = 123, .two = 213 }; 
-  payload_t datos = { .accel_x = 0, .accel_y = 0, .accel_z = 0};
+  uint16_t magnetometro = 0; 
 
   // result of packet transmission
   fn_status_t success = 0;
@@ -114,79 +102,63 @@ int main(void)
   uint64_t time_reply = 0; // response time after packet sent
 
   while (1) {
+    // These are the raw numbers from the chip, so will need tweaking to be really useful.
     mpu6050_read_raw(acceleration, gyro, &temp);
     cy273_read(magneto);
-    // These are the raw numbers from the chip, so will need tweaking to be really useful.
-    // See the datasheet for more information
-    printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
-    printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
+    
+    // INIT DATA -----------------------------
+    payload_accel_t datos = { .accel_x = acceleration[0], .accel_y = acceleration[1], .accel_z = acceleration[2]};
+    payload_mag_t datos1 = { .vang_theta = gyro[0], .vang_phi = gyro[1], .vang_w = gyro[2]};
+    magnetometro = 10;
+
     // send to receiver's DATA_PIPE_0 address
     my_nrf.tx_destination((uint8_t[]){0x37,0x37,0x37,0x37,0x37});
-
     // time packet was sent
     time_sent = to_us_since_boot(get_absolute_time()); // time sent
-
     // send packet to receiver's DATA_PIPE_0 address
-    success = my_nrf.send_packet(&payload_zero, sizeof(payload_zero));
-
+    success = my_nrf.send_packet(&datos, sizeof(datos));
     // time auto-acknowledge was received
     time_reply = to_us_since_boot(get_absolute_time()); // response time
-
     if (success)
     {
-      printf("\nPacket sent:- Response: %lluμS | Payload: %d\n", time_reply - time_sent, payload_zero);
+      printf("\nPacket sent:- Response: %lluμS | Payload: Acc. X = %d, Y = %d, Z = %d\n", time_reply - time_sent, datos.accel_x, datos.accel_y, datos.accel_z);
 
     } else {
 
       printf("\nPacket not sent:- Receiver not available.\n");
     }
-
     sleep_ms(3000);
 
     // send to receiver's DATA_PIPE_1 address
     my_nrf.tx_destination((uint8_t[]){0xC7,0xC7,0xC7,0xC7,0xC7});
-
     // time packet was sent
     time_sent = to_us_since_boot(get_absolute_time()); // time sent
-
     // send packet to receiver's DATA_PIPE_1 address
-    success = my_nrf.send_packet(payload_one, sizeof(payload_one));
-    
+    success = my_nrf.send_packet(&datos1, sizeof(datos1));    
     // time auto-acknowledge was received
     time_reply = to_us_since_boot(get_absolute_time()); // response time
-
     if (success)
     {
-      printf("\nPacket sent:- Response: %lluμS | Payload: %s\n", time_reply - time_sent, payload_one);
-
+      printf("\nPacket sent:- Response: %lluμS | Payload: Gyro. X = %d, Y = %d, Z = %d\n", time_reply - time_sent, datos1.vang_theta, datos1.vang_phi, datos1.vang_w);
     } else {
-
       printf("\nPacket not sent:- Receiver not available.\n");
     }
-
     sleep_ms(3000);
 
     // send to receiver's DATA_PIPE_2 address
     my_nrf.tx_destination((uint8_t[]){0xC8,0xC7,0xC7,0xC7,0xC7});
-
     // time packet was sent
     time_sent = to_us_since_boot(get_absolute_time()); // time sent
-
     // send packet to receiver's DATA_PIPE_2 address
-    success = my_nrf.send_packet(&payload_two, sizeof(payload_two));
-    
+    success = my_nrf.send_packet(magnetometro, sizeof(magnetometro));    
     // time auto-acknowledge was received
     time_reply = to_us_since_boot(get_absolute_time()); // response time
-
     if (success)
     {
-      printf("\nPacket sent:- Response: %lluμS | Payload: %d & %d\n",time_reply - time_sent, payload_two.one, payload_two.two);
-
+      printf("\nPacket sent:- Response: %lluμS | Payload: %d & %d\n",time_reply - time_sent, magnetometro);
     } else {
-
       printf("\nPacket not sent:- Receiver not available.\n");
     }
-
     sleep_ms(3000);
   }
   
